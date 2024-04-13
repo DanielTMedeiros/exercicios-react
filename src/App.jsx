@@ -1,20 +1,12 @@
 import "./App.css";
 //import Pessoa from "./components/Pessoa";
-import ListaPessoa from "./components/ListaNomes";
+//import ListaPessoa from "./components/ListaNomes";
+import AdicionarTarefa from "./components/AdicionarTarefa";
 
 function App() {
-  const pessoaDados = [
-    "Daniel",
-    "Edna",
-    "Cake",
-    "Leto",
-    "Jujuba",
-    "Gizmo",
-    "Inquilino",
-  ];
   return (
     <div>
-      <ListaPessoa lista={pessoaDados} />
+      <AdicionarTarefa />
     </div>
   );
 }
