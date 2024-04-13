@@ -1,20 +1,24 @@
 import "./App.css";
 //import Pessoa from "./components/Pessoa";
-import ListaPessoa from "./components/ListaNomes";
+//import ListaPessoa from "./components/ListaNomes";
+import ListaTarefas from "./components/ListaTarefas";
 
 function App() {
-  const pessoaDados = [
-    "Daniel",
-    "Edna",
-    "Cake",
-    "Leto",
-    "Jujuba",
-    "Gizmo",
-    "Inquilino",
+  let mostralista = true;
+  const tarefas = [
+    "Estudar",
+    "Jogar videogame",
+    "Assistir filmes",
+    "Fazer exercícios de React",
+    "Limpar louça",
   ];
   return (
     <div>
-      <ListaPessoa lista={pessoaDados} />
+      {mostralista ? (
+        <ListaTarefas tarefas={tarefas} />
+      ) : (
+        <h5>Lista oculta!</h5>
+      )}
     </div>
   );
 }
